@@ -1,0 +1,32 @@
+.cloud-bg {
+    background: white;
+    border-radius: 50px;
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cloud-bg::before,
+  .cloud-bg::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .cloud-bg::before {
+    width: 120px;
+    height: 120px;
+    top: -30px;
+    left: 30px;
+  }
+  
+  .cloud-bg::after {
+    width: 180px;
+    height: 180px;
+    bottom: -30px;
+    right: 30px;
+  }
+  
